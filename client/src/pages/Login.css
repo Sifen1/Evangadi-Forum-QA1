@@ -1,0 +1,287 @@
+/* Combined styles for login and register pages */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-md-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0;
+}
+
+.login__container {
+  max-width: 100%;
+  margin: 0;
+  padding: 40px;
+  background: white;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.login__container h4 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.login__container p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  position: relative;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fff;
+  color: #000;
+  box-sizing: border-box;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.hide {
+  margin-right: 0;
+}
+
+.invalid {
+  border-color: #dc3545;
+}
+
+.error {
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+.text-danger {
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: -5px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.login__signInButton {
+  width: 100%;
+  padding: 12px;
+  background-color: #516cf0;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.login__signInButton:hover {
+  background-color: #fe8402;
+}
+
+.create {
+  color: #516cf0;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.create:hover {
+  text-decoration: underline;
+}
+
+.signinfas {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.signinfas i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+  cursor: pointer;
+  color: #000;
+}
+
+.signfas {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.signfas i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+  cursor: pointer;
+  color: #000;
+  margin-top: -35px;
+}
+
+.input-group {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.input-group .first-name,
+.input-group .last-name {
+  flex: 1;
+  margin: 0;
+}
+
+.about-column {
+  background-color: transparent !important; /* Changed from #f8f9fa to transparent */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .auth-container {
+    max-width: 90%;
+  }
+
+  .about-column {
+    order: -1;
+    padding: 30px 0;
+  }
+}
+/* Added this to Login.css to over ride main content padding*/
+.auth-page {
+  margin: -2rem; /* Counteract the main-content padding */
+  min-height: calc(100vh - 0px); /* Adjust based on your header/footer height */
+}
+/* Added this to override */
+.auth-container {
+  width: 100% !important;
+  max-width: 1200px !important;
+}
+
+.row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+}
+
+.col-md-6 {
+  flex: 0 0 50% !important;
+  max-width: 50% !important;
+}
+/* Add this to Login.css */
+.auth-page {
+  margin: 0; /* Remove the negative margin */
+  padding-top: 90px; /* Add padding to account for fixed header (70px height + some extra) */
+  padding-bottom: 20px; /* Add some padding at the bottom */
+  min-height: calc(100vh - 0px); /* This will be adjusted */
+}
+
+/* Make sure the auth container doesn't get hidden behind the header */
+.auth-container {
+  position: relative;
+  z-index: 1; /* Lower than the header's z-index of 1000 */
+}
+/* Add to Login.css */
+.create {
+  color: #fe8402 !important; /* Change from #516CF0 to #FE8402 */
+  text-decoration: none;
+  margin-left: 5px;
+  transition: color 0.3s ease;
+}
+
+.create:hover {
+  text-decoration: underline;
+  color: #e67300 !important; /* Darker orange on hover */
+}
+
+/* For the privacy policy and terms links in Register.jsx */
+p a.create {
+  color: #fe8402 !important;
+}
+
+p a.create:hover {
+  color: #e67300 !important;
+  text-decoration: underline;
+}
+
+
+
+
+/* Update in Login.css */
+.auth-layout {
+  display: flex;
+  width: 100%;
+  max-width: 1000px; /* Reduced from 1200px */
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px; /* Significantly reduced from 30px to 5px */
+}
+
+.auth-form-container {
+  flex: 0 0 45%; /* Reduced from 50% */
+  max-width: 450px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-section-container {
+  flex: 0 0 45%; /* Reduced from 48% */
+  max-width: 450px;
+  margin-left: 0; /* Remove any margin */
+  padding-left: 0; /* Remove any padding */
+}
+
+
+
+/* Update responsive styles */
+@media (max-width: 768px) {
+  .auth-layout {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  
+  .auth-form-container,
+  .about-section-container {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

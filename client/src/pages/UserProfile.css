@@ -1,0 +1,133 @@
+.profile-container {
+  max-width: 800px;
+  margin: 84px auto;
+  padding: 0 1rem;
+}
+
+.profile-header {
+  background: linear-gradient(to right, #f5f7fa, #e4f1fe);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  border-left: 5px solid #2980b9;
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(to left, rgba(243, 156, 18, 0.1), transparent);
+}
+
+.profile-header h2 {
+  color: #2980b9;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #f39c12;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.user-info {
+  margin-top: 1.5rem;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.user-info p {
+  margin: 0.8rem 0;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+
+.user-info p strong {
+  color: #f39c12;
+  min-width: 100px;
+  display: inline-block;
+}
+
+.user-questions {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #f39c12;
+}
+
+.user-questions h3 {
+  color: #2980b9;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #f39c12;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.question-item {
+  padding: 1.2rem;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 1.2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+}
+
+.question-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  background: linear-gradient(to right, #f5f7fa, #e4f1fe);
+}
+
+.question-item:last-child {
+  border-bottom: none;
+}
+
+.question-item h4 {
+  color: #f39c12;
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+}
+
+.question-item p {
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+}
+
+.question-item small {
+  color: #666;
+  display: block;
+  margin-top: 0.8rem;
+  font-style: italic;
+  text-align: right;
+}
+
+/* Loading state */
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: #2980b9;
+  font-size: 1.2rem;
+}
+
+/* Empty state */
+.user-questions p:only-child {
+  text-align: center;
+  padding: 1.5rem;
+  color: #666;
+  font-style: italic;
+  background: rgba(243, 156, 18, 0.05);
+  border-radius: 8px;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #464444;
+}
+
+.how-it-works {
+  margin: 84px auto;
+  max-width: 800px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  color: #333;
+  border: 2px solid #f39c12;
+}
+
+.how-it-works h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #2980b9;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.how-it-works-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.how-it-works-step {
+  background: linear-gradient(to right, #f5f7fa, #e4f1fe);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 5px solid #f39c12;
+}
+
+.how-it-works-step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.step-icon {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: #f39c12; /* Orange color for icons */
+  background: rgba(41, 128, 185, 0.1); /* Light blue background */
+  padding: 15px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.how-it-works-step h3 {
+  margin-top: 0;
+  font-size: 1.5em;
+  color: #2980b9; /* Blue color for headings */
+}
+
+.how-it-works-step p {
+  margin: 10px 0;
+  font-size: 1.05em;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Alternate styling for even steps */
+.how-it-works-step:nth-child(even) {
+  border-left: 5px solid #2980b9;
+}
+
+.how-it-works-step:nth-child(even) .step-icon {
+  color: #2980b9; /* Blue color for icons */
+  background: rgba(243, 156, 18, 0.1); /* Light orange background */
+}
+
+.how-it-works-step:nth-child(even) h3 {
+  color: #f39c12; /* Orange color for headings */
+}

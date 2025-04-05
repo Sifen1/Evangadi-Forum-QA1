@@ -1,0 +1,16 @@
+.app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+    padding: 2rem;
+}
+/* Added to override */
+.main-content {
+  width: 100%;
+  max-width: 100%;
+  padding: 0; /* Remove padding for login/register pages */
+}

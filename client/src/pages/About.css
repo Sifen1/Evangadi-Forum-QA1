@@ -1,0 +1,75 @@
+/* Update in About.css - remove all backgrounds */
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0; /* Remove padding */
+  background-color: transparent;
+}
+
+.about-content {
+  max-width: 100%;
+  text-align: left;
+  background-color: transparent; /* Remove any background */
+  padding: 0; /* Remove padding */
+  border-radius: 0; /* Remove border radius */
+}
+
+.about-title {
+  color: #FE8402; /* Keep this orange */
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.about-brand {
+  font-size: 24px;
+  color: #333333; /* Changed to dark gray/almost black */
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8); /* White shadow for dark text */
+}
+
+.about-text {
+  font-size: 14px;
+  color: #333333; /* Changed to dark gray/almost black */
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8); /* White shadow for dark text */
+}
+
+
+.about-btn {
+  background-color: #fe8402;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.about-btn:hover {
+  background-color: #e67300;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 30px 20px;
+  }
+
+  .about-content {
+    text-align: center;
+  }
+}
+/*  added to override */
+.about-column {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: #f8f9fa !important;
+}

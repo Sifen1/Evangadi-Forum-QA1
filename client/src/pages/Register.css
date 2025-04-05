@@ -1,0 +1,9 @@
+/* This file can import the Login.css since they share most styles */
+@import './Login.css';
+
+/* Any register-specific styles can be added here */
+.login__container {
+  max-width: 100%;
+  margin: 0;
+  padding: 40px;
+}
