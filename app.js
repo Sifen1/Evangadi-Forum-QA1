@@ -12,7 +12,8 @@ const answerRoutes = require("./routes/answerRoute");
 // Middleware
 app.use(
   cors({
-    origin: "https://evangadi-forum-monasir.netlify.app",
+    origin: "https://delightful-griffin-9ec7e6.netlify.app/",
+    
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
