@@ -12,7 +12,7 @@ const answerRoutes = require("./routes/answerRoute");
 // Middleware
 app.use(
   cors({
-    origin: "https://delightful-griffin-9ec7e6.netlify.app",
+    origin: "https://evangadi-forum-sifen.netlify.app",
     
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"],
