@@ -1,11 +1,12 @@
 import axios from "axios";
 
 const axiosBase = axios.create({
-  baseURL: "https://evangadi-forum-backend-xemm.onrender.com/api",
+  baseURL: "https://evangadi-forum-qa1-7.onrender.com/api",
   headers: {
     "Content-Type": "application/json",
   },
 });
+
 
 axiosBase.interceptors.request.use(
   (config) => {
