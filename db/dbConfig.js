@@ -36,7 +36,7 @@ const dbConnection = mysql2
     database: process.env.DB_NAME,
     password: process.env.DB_PASSWORD,
     port: process.env.DB_PORT,
-    connectionLimit: process.env.DB_CONNECTION_LIMIT || 10,
+    connectionLimit: process.env.DB_CONNECTION_LIMIT || 4,
     waitForConnections: true,
     enableKeepAlive: true,
   })
@@ -54,4 +54,6 @@ dbConnection
   });
 
 module.exports = dbConnection;
+
+
 
