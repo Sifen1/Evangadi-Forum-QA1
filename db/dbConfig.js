@@ -7,7 +7,7 @@ const dbConnection = mysql2
     database: process.env.MYSQL_ADDON_DB,
     host: process.env.MYSQL_ADDON_HOST,
     password: process.env.MYSQL_ADDON_PASSWORD,
-    connectionLimit: 10,
+    //connectionLimit: 10,
     port: process.env.MYSQL_ADDON_PORT,
     waitForConnections: true,
     enableKeepAlive: true,
