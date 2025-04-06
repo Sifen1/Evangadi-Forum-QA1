@@ -19,7 +19,7 @@ app.use(
     allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
-
+app.options("*", cors()); // handles preflight
 app.use(express.json());
 
 // Routes with /api prefix
